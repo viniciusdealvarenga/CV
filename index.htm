@@ -2,196 +2,239 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo - Vinícius Silva de Alvarenga</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Lato', sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            background-color: #f4f4f4;
         }
         .container {
-            width: 90%;
-            max-width: 900px;
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
             background-color: #fff;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            color: #333;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        .header {
+            margin-bottom: 30px;
+        }
+        .full-name {
             font-size: 2.5em;
             text-align: center;
-            color: #333;
-            font-weight: 600;
+            font-weight: 700;
         }
         .contact-info {
             text-align: center;
-            margin-bottom: 20px;
+            font-size: 1.2em;
+            margin-top: 10px;
         }
-        .contact-info a {
-            color: #333;
-            text-decoration: none;
+        .contact-info span {
             margin: 0 15px;
+        }
+        .about {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .about .position {
+            font-size: 1.3em;
             font-weight: 600;
         }
-        .contact-info i {
-            margin-right: 8px;
+        .about .desc {
+            font-size: 1.1em;
+            margin-top: 10px;
         }
         .section {
-            margin-bottom: 30px;
-            padding: 25px;
-            border-radius: 8px;
-            background-color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-top: 40px;
         }
-        h2 {
+        .section__title {
             font-size: 1.8em;
-            color: #333;
+            font-weight: 700;
             margin-bottom: 15px;
-            font-weight: 600;
         }
-        ul {
+        .section__list {
             list-style-type: none;
             padding: 0;
         }
-        ul li {
-            margin: 8px 0;
-            font-size: 1.1em;
-            line-height: 1.6;
+        .section__list-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
         }
-        .download-btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 12px 25px;
-            background-color: #ffcc00;
-            color: #fff;
-            text-decoration: none;
+        .left {
+            width: 48%;
+        }
+        .right {
+            width: 48%;
+        }
+        .name {
             font-weight: 600;
-            border-radius: 5px;
-            text-align: center;
-            transition: background-color 0.3s;
         }
-        .download-btn:hover {
-            background-color: #e6b800;
+        .desc {
+            font-size: 1.1em;
         }
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 2em;
-            }
-            h2 {
-                font-size: 1.5em;
-            }
+        .skills__item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .skills__item .left {
+            width: 50%;
+            font-weight: 600;
+        }
+        .skills__item .right {
+            display: flex;
+            align-items: center;
+        }
+        .skills__item input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .section__list-item a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .section__list-item a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Vinícius Silva de Alvarenga</h1>
-        
-        <section class="profile section-padding">
-            <div class="container">
-                <div class="picture-resume-wrapper">
-                    <div class="picture-resume">
-                        <span><img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="Vinícius Silva de Alvarenga" /></span>
-                    </div>
-                </div>
-                <div class="name-wrapper">
-                    <h1>Vinícius Silva de Alvarenga</h1>
-                </div>
-                <div class="contact-info clearfix">
-                    <ul class="list-titles">
-                        <li>Call</li>
-                        <li>Mail</li>
-                        <li>Web</li>
-                        <li>Home</li>
-                    </ul>
-                    <ul class="list-content">
-                        <li><a href="https://wa.me/5562xxxxxxxx" target="_blank">+55 62 9xxxx-xxxx</a></li>
-                        <li><a href="mailto:viniciussilvadealvarenga@gmail.com">viniciussilvadealvarenga@gmail.com</a></li>
-                        <li><a href="https://linktr.ee/viniciusdealvarenga" target="_blank">linktr.ee/viniciusdealvarenga</a></li>
-                        <li>Goiânia, GO</li>
-                    </ul>
-                </div>
-                <div class="contact-presentation">
-                    <p><span class="bold">Objetivo:</span> Busco oportunidade de professor universitário ou auxiliar de professor nas áreas de Matemática, Estatística e/ou Ciências Biológicas, com experiência no ensino de conteúdos complexos de forma clara e acessível.</p>
-                </div>
-            </div>
-        </section>
 
-        <section class="experience section-padding">
-            <div class="container">
-                <h3 class="experience-title">Experiência</h3>
-                <div class="experience-wrapper">
-                    <div class="company-wrapper clearfix">
-                        <div class="experience-title">Analista de Dados e Power BI</div>
-                        <div class="time">Desde janeiro de 2024</div>
-                    </div>
-                    <div class="job-wrapper clearfix">
-                        <div class="experience-title">Rotagyn Gestão de Frotas</div>
-                        <div class="company-description">
-                            <p>Responsável pela análise de dados e implementação de soluções utilizando Power BI.</p>
-                        </div>
-                    </div>
-
-                    <div class="company-wrapper clearfix">
-                        <div class="experience-title">Auxiliar de Atividades Educativas</div>
-                        <div class="time">Desde abril de 2023</div>
-                    </div>
-                    <div class="job-wrapper clearfix">
-                        <div class="experience-title">Secretaria de Educação de Goiânia</div>
-                        <div class="company-description">
-                            <p>Auxílio na organização de atividades educativas e apoio ao corpo docente.</p>
-                        </div>
-                    </div>
-
-                    <div class="company-wrapper clearfix">
-                        <div class="experience-title">Professor</div>
-                        <div class="time">Novembro de 2021 - Janeiro de 2023</div>
-                    </div>
-                    <div class="job-wrapper clearfix">
-                        <div class="experience-title">Secretaria de Educação de Goiás</div>
-                        <div class="company-description">
-                            <p>Ministração de aulas de Matemática e Ciências para a educação básica.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section-wrapper clearfix">
-                    <h3 class="section-title">Educação</h3>
-                    <ul>
-                        <li>Doutorado em Ecologia e Evolução - Universidade Federal de Goiás (2023)</li>
-                        <li>Especialização em Matemática, Suas Tecnologias e o Mundo do Trabalho - Universidade Federal do Piauí (2023)</li>
-                        <li>Especialização em Ciências da Natureza, Suas Tecnologias e o Mundo do Trabalho - Universidade Federal do Piauí (2023)</li>
-                        <li>Formação Docente para a Educação Básica – Matemática - Centro Universitário Unifael (2022)</li>
-                        <li>Formação Pedagógica para Graduados não Licenciados – Biologia - Universidade Cruzeiro do Sul (2021)</li>
-                        <li>Mestrado em Ecologia e Evolução - Universidade Federal de Goiás (2018)</li>
-                        <li>Graduação em Ecologia e Análise Ambiental - Universidade Federal de Goiás (2016)</li>
-                    </ul>
-                </div>
-
-                <div class="section-wrapper clearfix">
-                    <h3 class="section-title">Cursos e Qualificações Adicionais</h3>
-                    <ul>
-                        <li>Curso de Power BI Avançado - Udemy (2023)</li>
-                        <li>Certificação em Análise de Dados - Google Data Analytics (2022)</li>
-                        <li>Formação em Estatística Aplicada - Coursera (2021)</li>
-                    </ul>
-                </div>
-
-                <a href="vinicius-silva-alvarenga-cv.pdf" class="download-btn" download>Baixar CV em PDF</a>
-            </div>
-        </section>
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <div class="full-name">
+            <span class="first-name">Vinícius</span> 
+            <span class="last-name">Silva de Alvarenga</span>
+        </div>
+        <div class="contact-info">
+            <span class="email">Email: </span>
+            <span class="email-val">viniciussilvadealvarenga@gmail.com</span>
+            <span class="separator">|</span>
+            <span class="phone">Phone: </span>
+            <span class="phone-val">+55 62 9xxxx-xxxx</span>
+        </div>
+        <div class="about">
+            <span class="position">Professor Universitário / Analista de Dados</span>
+            <span class="desc">
+                Professor universitário com experiência em Matemática, Estatística e Ciências Biológicas. Busco novas oportunidades para contribuir com minha experiência em análise de dados e ensino.
+            </span>
+        </div>
     </div>
+
+    <!-- Experience -->
+    <div class="section">
+        <div class="section__title">Experiência</div>
+        <div class="section__list">
+            <div class="section__list-item">
+                <div class="left">
+                    <div class="name">Rotagyn Gestão de Frotas</div>
+                    <div class="addr">Goiânia, GO</div>
+                    <div class="duration">Desde janeiro de 2024</div>
+                </div>
+                <div class="right">
+                    <div class="name">Analista de Dados e Power BI</div>
+                    <div class="desc">Responsável pela análise de dados e desenvolvimento de dashboards interativos utilizando Power BI.</div>
+                </div>
+            </div>
+            <div class="section__list-item">
+                <div class="left">
+                    <div class="name">Secretaria de Educação de Goiânia</div>
+                    <div class="addr">Goiânia, GO</div>
+                    <div class="duration">Desde abril de 2023</div>
+                </div>
+                <div class="right">
+                    <div class="name">Auxiliar de Atividades Educativas</div>
+                    <div class="desc">Auxílio na organização e implementação de atividades pedagógicas.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <div class="section__title">Educação</div>
+        <div class="section__list">
+            <div class="section__list-item">
+                <div class="left">
+                    <div class="name">Universidade Federal de Goiás</div>
+                    <div class="addr">Goiás, GO</div>
+                    <div class="duration">Doutorado em Ecologia e Evolução (2023)</div>
+                </div>
+                <div class="right">
+                    <div class="name">Doutorado</div>
+                    <div class="desc">Foco em Ecologia e Evolução.</div>
+                </div>
+            </div>
+            <div class="section__list-item">
+                <div class="left">
+                    <div class="name">Universidade Federal do Piauí</div>
+                    <div class="addr">Piauí, PI</div>
+                    <div class="duration">Especialização em Matemática e Ciências (2023)</div>
+                </div>
+                <div class="right">
+                    <div class="name">Especialização</div>
+                    <div class="desc">Foco em Matemática, Suas Tecnologias e o Mundo do Trabalho.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+        <div class="section__title">Projetos</div>
+        <div class="section__list">
+            <div class="section__list-item">
+                <div class="name">Análise de Dados de Frotas</div>
+                <div class="text">Projeto de análise de dados para otimização da gestão de frotas. Utilização de Power BI para gerar relatórios e dashboards dinâmicos.</div>
+            </div>
+            <div class="section__list-item">
+                <div class="name">Aula de Matemática para Ensino Básico</div>
+                <div class="text">Criação de materiais didáticos e implementação de aulas de Matemática, focando no ensino claro e acessível de conteúdos complexos.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <div class="section__title">Habilidades</div>
+        <div class="skills__item">
+            <div class="left"><div class="name">Power BI</div></div>
+            <div class="right">
+                <input id="ck1" type="checkbox" checked />
+                <label for="ck1"></label>
+                <input id="ck2" type="checkbox" checked />
+                <label for="ck2"></label>
+                <input id="ck3" type="checkbox" />
+                <label for="ck3"></label>
+            </div>
+        </div>
+        <div class="skills__item">
+            <div class="left"><div class="name">Matemática</div></div>
+            <div class="right">
+                <input id="ck4" type="checkbox" checked />
+                <label for="ck4"></label>
+                <input id="ck5" type="checkbox" checked />
+                <label for="ck5"></label>
+                <input id="ck6" type="checkbox" />
+                <label for="ck6"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interests -->
+    <div class="section">
+        <div class="section__title">Interesses</div>
+        <div class="section__list">
+            <div class="section__list-item">Futebol, Programação, Ensino e Tecnologia.</div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
