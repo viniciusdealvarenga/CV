@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo - Vinícius Silva de Alvarenga</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
+        /* Layout e fontes */
         body {
             font-family: 'Lato', sans-serif;
             margin: 0;
@@ -21,6 +23,13 @@
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
+
+        /* Configuração para impressão A4 em retrato */
+        @page {
+            size: A4 portrait;
+            margin: 20mm;
+        }
+
         .header {
             margin-bottom: 30px;
         }
@@ -49,6 +58,8 @@
             font-size: 1.1em;
             margin-top: 10px;
         }
+        
+        /* Seções */
         .section {
             margin-top: 40px;
         }
@@ -78,6 +89,41 @@
         .desc {
             font-size: 1.1em;
         }
+        
+        /* Botão de download */
+        .download-btn {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin: 30px 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Ícones de redes sociais */
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            font-size: 1.5em;
+            margin: 0 15px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+
+        /* Habilidades */
         .skills__item {
             display: flex;
             justify-content: space-between;
@@ -94,19 +140,12 @@
         .skills__item input[type="checkbox"] {
             margin-right: 5px;
         }
-        .section__list-item a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .section__list-item a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Header -->
+    <!-- Cabeçalho -->
     <div class="header">
         <div class="full-name">
             <span class="first-name">Vinícius</span> 
@@ -127,7 +166,20 @@
         </div>
     </div>
 
-    <!-- Experience -->
+    <!-- Seção de Redes Sociais -->
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://linktr.ee/seu-linktree" target="_blank" title="Linktree">
+            <i class="fab fa-linktree"></i>
+        </a>
+        <a href="https://github.com/seu-github" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <!-- Experiência -->
     <div class="section">
         <div class="section__title">Experiência</div>
         <div class="section__list">
@@ -156,7 +208,7 @@
         </div>
     </div>
 
-    <!-- Education -->
+    <!-- Educação -->
     <div class="section">
         <div class="section__title">Educação</div>
         <div class="section__list">
@@ -185,7 +237,7 @@
         </div>
     </div>
 
-    <!-- Projects -->
+    <!-- Projetos -->
     <div class="section">
         <div class="section__title">Projetos</div>
         <div class="section__list">
@@ -200,7 +252,7 @@
         </div>
     </div>
 
-    <!-- Skills -->
+    <!-- Habilidades -->
     <div class="section">
         <div class="section__title">Habilidades</div>
         <div class="skills__item">
@@ -214,26 +266,12 @@
                 <label for="ck3"></label>
             </div>
         </div>
-        <div class="skills__item">
-            <div class="left"><div class="name">Matemática</div></div>
-            <div class="right">
-                <input id="ck4" type="checkbox" checked />
-                <label for="ck4"></label>
-                <input id="ck5" type="checkbox" checked />
-                <label for="ck5"></label>
-                <input id="ck6" type="checkbox" />
-                <label for="ck6"></label>
-            </div>
-        </div>
     </div>
 
-    <!-- Interests -->
-    <div class="section">
-        <div class="section__title">Interesses</div>
-        <div class="section__list">
-            <div class="section__list-item">Futebol, Programação, Ensino e Tecnologia.</div>
-        </div>
-    </div>
+    <!-- Botão de download -->
+    <a href="path_to_pdf" download>
+        <button class="download-btn">Baixar PDF</button>
+    </a>
 </div>
 
 </body>
